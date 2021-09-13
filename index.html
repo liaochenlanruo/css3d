@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<!--		<meta charset="utf-8" />
+		<title>css-3d旋转相册</title>
+		<link rel="stylesheet" href="./css/hovertree.css" />
+		  <meta charset="utf-8">
+-->
+  <!-- cungudafa百度收录验证编号 -->
+  <!-- <meta name="baidu-site-verification" content="LukfTcyXmC" /> -->
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" charset="utf-8" />
+  
+  <title itemprop="name">liaochenlanruo</title>
+  
+  <link rel="shortcut icon" href="/images/sakura.ico">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn/css/style.css" type="text/css" media="all" id="saukra_css-css"> -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn/css/jquery.fancybox.min.css" media="all">  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn/css/font.css" media="all">
+   <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn/css/tags.css" media="all">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn/css/logo.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn/fonts/LOGO/logo.css">
+  <link rel="stylesheet" href="./css/hovertree.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+
+  <!-- 分析 -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+  <!-- Baidu Analytics -->
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d211830a796ceefb38a141fde14e4d5a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+  
+  <!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+  " type="text/css" media="all"> -->
+  <script>
+    /*Initial Variables*/
+    var mashiro_option = new Object();
+    var mashiro_global = new Object();
+    mashiro_option.NProgressON = true;
+    /* 
+    * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+    * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+    */
+    mashiro_option.email_domain = "";
+    mashiro_option.email_name = "";
+    mashiro_option.cookie_version_control = "";
+    mashiro_option.qzone_autocomplete = false;
+    mashiro_option.site_name = "liaochenlanruo了尘兰若";
+    mashiro_option.author_name = "了尘兰若";
+    mashiro_option.site_url = "https://liaochenlanruo.github.io/";
+    mashiro_option.v_appId = "Dfqm5YsyQWjrp0pm11CsvQb2-gzGzoHsz";//
+    mashiro_option.v_appKey = "iIqYHzdT8zt3eSt5VKGxnP3o";//
+    mashiro_option.mathjax = "1";
+    mashiro_option.copyright_enable = "true" ;
+    mashiro_option.copyright_minCharNumber = parseInt("120") ;
+    mashiro_option.copyright_description = "本文章著作权归作者所有，任何形式的转载都请注明出处。" ;
+    mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+    mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+    // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+    // mashiro_option.float_player_on = true;
+
+    /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+    var bg = "https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_1.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_2.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_3.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_4.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_5.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_6.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_7.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_8.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_9.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_10.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_11.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_12.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_13.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_14.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_15.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_16.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_17.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_18.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_19.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_20.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_21.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_22.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_23.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_24.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_25.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_26.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_27.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_28.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_29.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_30.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_31.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_32.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_33.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_34.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_35.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_36.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_37.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_38.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_39.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_40.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_41.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_42.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_43.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_44.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_45.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_46.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_47.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_48.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_49.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_50.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_51.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_52.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_53.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_54.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_55.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_56.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_57.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_58.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_59.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_60.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_61.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_62.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_63.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_64.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_65.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_66.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_67.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_68.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_69.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_70.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_71.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_72.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_73.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_74.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_75.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_76.webp,https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@master/img/custom/bgs/thumb_77.webp".split(",");
+    var bgindex = Math.floor(Math.random()*bg.length);
+    if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+      alert('朋友，IE浏览器未适配哦~');
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="liaochenlanruo" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+	</head>
+	<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+		 <!-- Dynamic sliders -->
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <!-- Main content -->
+  <section id="main-container">
+    <!-- Top menu -->
+    <div class="headertop filter-dot">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://liaochenlanruo.github.io/">
+          <img src="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@2.1.6/img/other/default_avatar.jpg">
+        </a>
+      </div>
+      <div class="header-info">
+        <p>三天打鱼两天摸鱼</p>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="https://qm.qq.com/cgi-bin/qm/qr?k=MvzVgAKxc2r6SmGIX7aaeSMgWUQLGbJn&amp;jump_from=webapi" target="_blank" class="social-github" title="生信之巅QQ群">
+                    <img src="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@2.1.6/img/social/qq.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://gitee.com/liaochenlanruo" target="_blank" class="social-github" title="gitee">
+                    <img src="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@2.1.6/img/social/gitee.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="http://github.com/liaochenlanruo" target="_blank" class="social-github" title="github">
+                    <img src="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@2.1.6/img/social/github.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://blog.csdn.net/u013405734" target="_blank" class="social-github" title="csdn">
+                    <img src="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@2.1.6/img/social/csdn.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://www.zhihu.com/people/suan-la-mian-pian-tang-cium" target="_blank" class="social-github" title="zhihu">
+                    <img src="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@2.1.6/img/social/zhihu.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://www.jianshu.com/u/848bd32053b7" target="_blank" class="social-github" title="jianshu">
+                    <img src="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@2.1.6/img/social/jianshu.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://weibo.com/u/2715210923" target="_blank" class="social-github" title="sina">
+                    <img src="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@2.1.6/img/social/sina.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://space.bilibili.com/1831854391" target="_blank" class="social-github" title="bilibili">
+                    <img src="https://cdn.jsdelivr.net/gh/liaochenlanruo/cdn@2.1.6/img/social/bilibili.png">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+        </div>
+        <!--  ÿ��ʫ��-->
+        <br />
+        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+          <div id="poem_sentence"></div>
+          <div id="poem_info"></div>
+        <script type="text/javascript">
+          jinrishici.load(function(result) {
+            var sentence = document.querySelector("#poem_sentence")
+            var info = document.querySelector("#poem_info")
+            sentence.innerHTML = "<br>" + result.data.content
+            info.innerHTML = '-- ' + '[' + result.data.origin.dynasty + ']  ' + result.data.origin.author + '  <<' + result.data.origin.title + '>>'
+          });
+        </script>
+        <!-- ÿ��ʫ�ʽ���-->
+      </div>
+    </div>
+  </figure>
+  
+  <div id="video-container">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <!-- banner -->
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+        <span class="site-title">
+            <span class="logolink logo">
+                <a href="/">
+                    <ruby>
+                    <span class="sakuraso">了尘兰若</span>
+                    <span class="no">の</span>
+                    <span class="shironeko">小坑</span>
+                    <rp></rp>
+                    <rt class="logo">liaochenlanruo</rt>
+                    <rp></rp>
+                    </ruby>
+                  </a>
+            </span>
+          </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    归档
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/analytics/">
+                          <i class="fa fa-line-chart" aria-hidden="true"></i>
+                          统计
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/tags">
+                          <i class="fa fa-tags" aria-hidden="true"></i>
+                          标签
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/">
+                          <i class="fa fa-code" aria-hidden="true"></i>
+                          生信
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E5%9C%B0%E4%BF%A1/">
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                          地信
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/IT/">
+                          <i class="fa fa-bug" aria-hidden="true"></i>
+                          IT
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E5%8F%AF%E8%A7%86%E5%8C%96/">
+                          <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                          可视化
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E6%8A%95%E7%A8%BF/">
+                          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                          投稿
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E6%B4%BB%E5%8A%A8/">
+                          <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                          活动
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E5%B0%8F%E8%AF%B4/">
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          小说
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="javascript:;">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+                    清单
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/artitalk/">
+                          <i class="fa fa-commenting-o fa-commenting" aria-hidden="true"></i>
+                          说说
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/photos/">
+                          <i class="fa fa-photo" aria-hidden="true"></i>
+                          相册
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/books/">
+                          <i class="fa fa-book" aria-hidden="true"></i>
+                          阅读
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/movies/">
+                          <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                          追剧
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/games/">
+                          <i class="fa fa-gamepad" aria-hidden="true"></i>
+                          游戏
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/comment/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+                    留言板
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+                    友人帐
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/donate/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+                    赞赏
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/about/">
+                          <i class="fa fa-meetup" aria-hidden="true"></i>
+                          我？
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/box/">
+                          <i class="fa fa-dropbox" aria-hidden="true"></i>
+                          魔盒
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+<!--		<div class="hovertreeinfo">
+			<h2>韩孝周.love</h2>
+		</div> -->
+		<!--/*外层最大容器*/-->
+		<div class="wrap">
+			<!--	/*包裹所有元素的容器*/-->
+			<div class="cube">
+				<!--前面图片 -->
+				<div class="out_front">
+					<img src="img/img01.jpg " class="pic" />
+				</div>
+				<!--后面图片 -->
+				<div class="out_back">
+					<img src="img/img02.jpg" class="pic"/>
+				</div>
+				<!--左图片 -->
+				<div class="out_left">
+					<img src="img/img03.jpg" class="pic" />
+				</div>
+				<div class="out_right">
+					<img src="img/img04.jpg" class="pic" />
+				</div>
+				<div class="out_top">
+					<img src="img/img05.jpg" class="pic" />
+				</div>
+				<div class="out_bottom">
+					<img src="img/img06.jpg" class="pic" />
+				</div>
+				<!--小正方体 -->
+				<span class="in_front">
+					<img src="img/img07.jpg" class="in_pic" />
+				</span>
+				<span class="in_back">
+					<img src="img/img08.jpg" class="in_pic" />
+				</span>
+				<span class="in_left">
+					<img src="img/img09.jpg" class="in_pic" />
+				</span>
+				<span class="in_right">
+					<img src="img/img10.jpg" class="in_pic" />
+				</span>
+				<span class="in_top">
+					<img src="img/img11.jpg" class="in_pic" />
+				</span>
+				<span class="in_bottom">
+					<img src="img/img12.jpg" class="in_pic" />
+				</span>
+			</div>
+		</div>
+		<!-- 网易云外链音乐 -->
+		<!-- 只有发布和编译到端口才会自动播放 -->
+		<div style="position:absolute;right:0px;bottom:0px;">
+			<iframe frameborder="no" border="0" marginwidth="0" marginheight="100%" width=330 height=86 
+				src="//music.163.com/outchain/player?type=2&id=1370748318&auto=1&height=66"></iframe>
+		</div>
+		<!-- 本地音乐，双击index.html -->
+		<div style="position:absolute;left:0px;bottom:0px;">
+			<!-- 隐藏播放条：删除ontrols="controls"部分 -->
+			<audio autoplay="autopaly" loop="loop" controls="controls" id="audios">
+				<source src="music/qianyuqianxun.mp3" type="audio/mp3" />
+			</audio>
+		</div>
+		<script>
+			var music = document.getElementById('video');
+			var state = 0;
+			document.addEventListener('touchstart', function(){    
+				  if(state==0){        
+					  music.play();        
+					  state=1;    
+				  }  
+			  }, false);
+			document.addEventListener("WeixinJSBridgeReady", function () {    
+				  music.play();
+			  }, false);  
+			//循环播放
+			music.onended = function () {    
+				music.load();    
+				music.play();
+			}    
+		</script>
+	</body>
+</html>
